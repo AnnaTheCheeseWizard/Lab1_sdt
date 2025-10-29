@@ -21,16 +21,19 @@ class TreeNode:
         return None
 
     def traverse_dfs(self):
-        print(self.value)
+        result = [self.value]
         for child in self.children:
-            child.traverse_dfs()
+            result.extend(child.traverse_dfs())
+        return result
 
     def traverse_bfs(self):
+        result = []
         queue = [self]
         while queue:
             current = queue.pop(0)
-            print(current.value)
+            result.append(current.value)
             queue.extend(current.children)
+        return result
 
 class BinaryTreeNode:
     def __init__(self, value):
@@ -60,25 +63,30 @@ class BinaryTreeNode:
         return None
 
     def inorder(self):
+        result = []
         if self.left:
-            self.left.inorder()
-        print(self.value)
+            result.extend(self.left.inorder())
+        result.append(self.value)
         if self.right:
-            self.right.inorder()
+            result.extend(self.right.inorder())
+        return result
 
     def preorder(self):
-        print(self.value)
+        result = [self.value]
         if self.left:
-            self.left.preorder()
+            result.extend(self.left.preorder())
         if self.right:
-            self.right.preorder()
+            result.extend(self.right.preorder())
+        return result
 
     def postorder(self):
+        result = []
         if self.left:
-            self.left.postorder()
+            result.extend(self.left.postorder())
         if self.right:
-            self.right.postorder()
-        print(self.value)
+            result.extend(self.right.postorder())
+        result.append(self.value)
+        return result
 
 
 class Point:
