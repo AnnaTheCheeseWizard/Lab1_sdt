@@ -1,0 +1,55 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# ========================
+# Virtual environments
+# ========================
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# ========================
+# IDE / Editor files
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# OS / Misc
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Doxygen documentation
+# ========================
+html/
+latex/
+xml/
+man/
+rtf/
+docs/html/
+docs/latex/
+docs/xml/
+docs/man/
+docs/rtf/
+
+# ========================
+# GitHub Pages artifacts (if manually generated)
+# ========================
+gh-pages/
