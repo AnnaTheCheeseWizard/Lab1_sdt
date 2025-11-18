@@ -34,8 +34,9 @@ jobs:
           
       - name: Run Unit Tests
         # Executes the unit tests in test_main.py
-        run: python3 tests/test_main.py
-        
+        run: |
+          export PYTHONPATH=$PWD
+          python3 tests/test_main.py
       # 2.  Doxygen Documentation Generation
       - name: Install Doxygen
         # Install Doxygen on the GitHub virtual server
