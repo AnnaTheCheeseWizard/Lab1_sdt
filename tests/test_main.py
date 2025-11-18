@@ -1,6 +1,6 @@
 import unittest
 from math import isclose
-from main import TreeNode, BinaryTreeNode, Point, Circle, Polygon
+from main import TreeNode, BinaryTreeNode, Point, Circle, Polygon, LineSegment
 
 class TestTreeStructures(unittest.TestCase):
     """
