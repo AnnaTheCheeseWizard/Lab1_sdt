@@ -6,7 +6,7 @@ on:
       - main # Trigger on push to the main branch
       - feature/docs-ci # Also trigger when working on documentation features
   workflow_dispatch: # Allows manual trigger from the GitHub UI
-
+ 
 # Permissions required to publish to GitHub Pages
 permissions:
   contents: read
