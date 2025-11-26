@@ -1,53 +1,51 @@
 import math
 
-import math
-
 class TreeNode:
-    """
-    Represents a node in a general-purpose tree.
-
-    Attributes:
-        value: Stored value of the node.
-        children (list[TreeNode]): List of child nodes.
+    """!
+    @brief Represents a node in a general-purpose tree.
+    
+    This class allows for a variable number of children per node.
     """
 
     def __init__(self, value):
-        """
-        Initializes a TreeNode.
+        """!
+        @brief Initializes a TreeNode.
 
-        Args:
-            value: The stored value inside the node.
+        @param value The stored value inside the node.
         """
+        ## @var value
+        # Stored value of the node.
         self.value = value
+        ## @var children
+        # List of child nodes (list[TreeNode]).
         self.children = []
 
     def add_child(self, child_node):
-        """
-        Adds a child node.
+        """!
+        @brief Adds a child node.
 
-        Args:
-            child_node (TreeNode): Node to be added.
+        @param child_node The node to be added to the list of children.
         """
         self.children.append(child_node)
 
     def remove_child_by_value(self, value):
-        """
-        Removes a child node by its value.
+        """!
+        @brief Removes a child node by its value.
 
-        Args:
-            value: Value of the child node to remove.
+        Removes all children that match the specified value.
+
+        @param value Value of the child node(s) to remove.
         """
         self.children = [child for child in self.children if child.value != value]
 
     def find(self, value):
-        """
-        Searches for a node with the given value in the subtree.
+        """!
+        @brief Searches for a node with the given value in the subtree.
 
-        Args:
-            value: The value to search for.
+        Performs a recursive search.
 
-        Returns:
-            TreeNode | None: Found node or None if not found.
+        @param value The value to search for.
+        @return TreeNode | None Returns the found node or None if not found.
         """
         if self.value == value:
             return self
@@ -58,11 +56,10 @@ class TreeNode:
         return None
 
     def traverse_dfs(self):
-        """
-        Performs depth-first traversal of the tree.
+        """!
+        @brief Performs depth-first traversal of the tree.
 
-        Returns:
-            list: A list of node values in DFS order.
+        @return list A list of node values in DFS order.
         """
         result = [self.value]
         for child in self.children:
@@ -70,11 +67,10 @@ class TreeNode:
         return result
 
     def traverse_bfs(self):
-        """
-        Performs breadth-first traversal of the tree.
+        """!
+        @brief Performs breadth-first traversal of the tree.
 
-        Returns:
-            list: A list of node values in BFS order.
+        @return list A list of node values in BFS order.
         """
         result = []
         queue = [self]
@@ -87,34 +83,36 @@ class TreeNode:
         return result
 
 
-
 class BinaryTreeNode:
-    """
-    Represents a node in a binary search tree (BST).
+    """!
+    @brief Represents a node in a binary search tree (BST).
 
-    Attributes:
-        value: Stored value.
-        left (BinaryTreeNode | None): Left subtree.
-        right (BinaryTreeNode | None): Right subtree.
+    Each node has at most two children: left and right.
     """
 
     def __init__(self, value):
-        """
-        Initializes a BinaryTreeNode.
+        """!
+        @brief Initializes a BinaryTreeNode.
 
-        Args:
-            value: Value stored in the node.
+        @param value Value stored in the node.
         """
+        ## @var value
+        # The value stored in the node.
         self.value = value
+        ## @var left
+        # Left child node (BinaryTreeNode | None).
         self.left = None
+        ## @var right
+        # Right child node (BinaryTreeNode | None).
         self.right = None
 
     def insert_bst(self, value):
-        """
-        Inserts a new value into the BST.
+        """!
+        @brief Inserts a new value into the BST.
 
-        Args:
-            value: Value to insert.
+        Maintains the BST property: left < root < right.
+
+        @param value Value to insert.
         """
         if value < self.value:
             if self.left:
@@ -128,14 +126,11 @@ class BinaryTreeNode:
                 self.right = BinaryTreeNode(value)
 
     def search(self, value):
-        """
-        Searches for a value in the BST.
+        """!
+        @brief Searches for a value in the BST.
 
-        Args:
-            value: The value to search for.
-
-        Returns:
-            BinaryTreeNode | None: Found node or None.
+        @param value The value to search for.
+        @return BinaryTreeNode | None Returns the found node or None.
         """
         if self.value == value:
             return self
@@ -146,11 +141,10 @@ class BinaryTreeNode:
         return None
 
     def inorder(self):
-        """
-        Returns inorder traversal (Left–Root–Right).
+        """!
+        @brief Returns inorder traversal (Left-Root-Right).
 
-        Returns:
-            list: Sorted list of values.
+        @return list Sorted list of values.
         """
         result = []
         if self.left:
@@ -161,11 +155,10 @@ class BinaryTreeNode:
         return result
 
     def preorder(self):
-        """
-        Returns preorder traversal (Root–Left–Right).
+        """!
+        @brief Returns preorder traversal (Root-Left-Right).
 
-        Returns:
-            list: Values in preorder order.
+        @return list Values in preorder sequence.
         """
         result = [self.value]
         if self.left:
@@ -175,11 +168,10 @@ class BinaryTreeNode:
         return result
 
     def postorder(self):
-        """
-        Returns postorder traversal (Left–Right–Root).
+        """!
+        @brief Returns postorder traversal (Left-Right-Root).
 
-        Returns:
-            list: Values in postorder order.
+        @return list Values in postorder sequence.
         """
         result = []
         if self.left:
@@ -190,188 +182,162 @@ class BinaryTreeNode:
         return result
 
 
-
 class Point:
-    """
-    Represents a point in 2D space.
-
-    Attributes:
-        x (float): X-coordinate.
-        y (float): Y-coordinate.
+    """!
+    @brief Represents a point in 2D space.
     """
 
     def __init__(self, x, y):
-        """
-        Initializes a point.
+        """!
+        @brief Initializes a point.
 
-        Args:
-            x (float): X-coordinate.
-            y (float): Y-coordinate.
+        @param x X-coordinate.
+        @param y Y-coordinate.
         """
+        ## @var x
+        # X-coordinate (float).
         self.x = x
+        ## @var y
+        # Y-coordinate (float).
         self.y = y
 
     def move(self, dx, dy):
-        """
-        Moves the point.
+        """!
+        @brief Moves the point by a given offset.
 
-        Args:
-            dx (float): Shift along the X-axis.
-            dy (float): Shift along the Y-axis.
-
-        Returns:
-            Point: New moved point.
+        @param dx Shift along the X-axis.
+        @param dy Shift along the Y-axis.
+        @return Point A new Point instance at the moved coordinates.
         """
         return Point(self.x + dx, self.y + dy)
 
     def scale(self, factor):
-        """
-        Scales the point.
+        """!
+        @brief Scales the point coordinates relative to the origin.
 
-        Args:
-            factor (float): Scaling factor.
-
-        Returns:
-            Point: New scaled point.
+        @param factor Scaling factor.
+        @return Point A new scaled Point instance.
         """
         return Point(self.x * factor, self.y * factor)
 
     def invert(self):
-        """
-        Inverts the point through the origin.
+        """!
+        @brief Inverts the point through the origin.
 
-        Returns:
-            Point: New inverted point.
+        @return Point A new Point instance with inverted coordinates.
         """
         return Point(-self.x, -self.y)
 
 
-
 class LineSegment:
-    """
-    Represents a line segment defined by two points.
-
-    Attributes:
-        p1 (Point): Starting point.
-        p2 (Point): Ending point.
+    """!
+    @brief Represents a line segment defined by two points.
     """
 
     def __init__(self, p1: Point, p2: Point):
-        """
-        Initializes a line segment.
+        """!
+        @brief Initializes a line segment.
 
-        Args:
-            p1 (Point): First endpoint.
-            p2 (Point): Second endpoint.
+        @param p1 The starting Point.
+        @param p2 The ending Point.
         """
+        ## @var p1
+        # Starting point of the segment.
         self.p1 = p1
+        ## @var p2
+        # Ending point of the segment.
         self.p2 = p2
 
 
-
 class Circle:
-    """
-    Represents a circle.
-
-    Attributes:
-        center (Point): Center of the circle.
-        radius (float): Radius of the circle.
+    """!
+    @brief Represents a circle in 2D space.
     """
 
     def __init__(self, center: Point, radius: float):
-        """
-        Initializes a circle.
+        """!
+        @brief Initializes a circle.
 
-        Args:
-            center (Point): Center point.
-            radius (float): Radius.
+        @param center The center Point of the circle.
+        @param radius The radius of the circle.
         """
+        ## @var center
+        # Center point of the circle.
         self.center = center
+        ## @var radius
+        # Radius of the circle.
         self.radius = radius
 
     def move(self, dx, dy):
-        """
-        Moves the circle.
+        """!
+        @brief Moves the circle by shifting its center.
 
-        Args:
-            dx (float): Shift along X-axis.
-            dy (float): Shift along Y-axis.
-
-        Returns:
-            Circle: New moved circle.
+        @param dx Shift along X-axis.
+        @param dy Shift along Y-axis.
+        @return Circle A new Circle instance at the moved position.
         """
         return Circle(self.center.move(dx, dy), self.radius)
 
     def scale(self, factor):
-        """
-        Scales the circle.
+        """!
+        @brief Scales the circle.
 
-        Args:
-            factor (float): Scaling factor.
+        Scales both the center position (relative to origin) and the radius.
 
-        Returns:
-            Circle: New scaled circle.
+        @param factor Scaling factor.
+        @return Circle A new scaled Circle instance.
         """
         return Circle(self.center.scale(factor), self.radius * factor)
 
     def invert(self):
-        """
-        Inverts the circle across the origin.
+        """!
+        @brief Inverts the circle across the origin.
 
-        Returns:
-            Circle: New inverted circle.
+        Inverts the center point; radius remains unchanged.
+
+        @return Circle A new inverted Circle instance.
         """
         return Circle(self.center.invert(), self.radius)
 
 
-
 class Polygon:
-    """
-    Represents a polygon defined by a sequence of points.
-
-    Attributes:
-        points (list[Point]): List of vertices.
+    """!
+    @brief Represents a polygon defined by a sequence of points.
     """
 
     def __init__(self, points):
-        """
-        Initializes a polygon.
+        """!
+        @brief Initializes a polygon.
 
-        Args:
-            points (list[Point]): List of polygon vertices.
+        @param points A list of Point objects representing vertices.
         """
+        ## @var points
+        # List of vertices (list[Point]).
         self.points = points
 
     def move(self, dx, dy):
-        """
-        Moves the polygon by shifting all vertices.
+        """!
+        @brief Moves the polygon by shifting all vertices.
 
-        Args:
-            dx (float): Shift along X.
-            dy (float): Shift along Y.
-
-        Returns:
-            Polygon: New moved polygon.
+        @param dx Shift along X-axis.
+        @param dy Shift along Y-axis.
+        @return Polygon A new Polygon instance with moved vertices.
         """
         return Polygon([p.move(dx, dy) for p in self.points])
 
     def scale(self, factor):
-        """
-        Scales the polygon by scaling all vertex coordinates.
+        """!
+        @brief Scales the polygon by scaling all vertex coordinates.
 
-        Args:
-            factor (float): Scale multiplier.
-
-        Returns:
-            Polygon: New scaled polygon.
+        @param factor Scale multiplier.
+        @return Polygon A new Polygon instance with scaled vertices.
         """
         return Polygon([p.scale(factor) for p in self.points])
 
     def invert(self):
-        """
-        Inverts the polygon through the origin.
+        """!
+        @brief Inverts the polygon through the origin.
 
-        Returns:
-            Polygon: New inverted polygon.
+        @return Polygon A new Polygon instance with inverted vertices.
         """
         return Polygon([p.invert() for p in self.points])
