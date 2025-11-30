@@ -19,10 +19,10 @@ class TreeNode:
     ## @name Public Attributes
     # @{
     ## @var value
-    # Зберігає дані, що знаходяться у вузлі (будь-якого типу).
+    # Stores the data contained in the node (of any type).
     #
     ## @var children
-    # Список дочірніх вузлів (list[TreeNode]), прикріплених до поточного вузла.
+    # A list of child nodes (list[TreeNode]) attached to the current node.
     # @}
 
     def __init__(self, value):
@@ -98,13 +98,13 @@ class BinaryTreeNode:
     ## @name Public Attributes
     # @{
     ## @var value
-    # Значення, що зберігається у вузлі.
+    # The value stored in the node.
     #
     ## @var left
-    # Лівий дочірній вузол (BinaryTreeNode | None).
+    # The left child node (BinaryTreeNode | None).
     #
     ## @var right
-    # Правий дочірній вузол (BinaryTreeNode | None).
+    # The right child node (BinaryTreeNode | None).
     # @}
 
     def __init__(self, value):
@@ -195,10 +195,10 @@ class Point:
     ## @name Public Attributes
     # @{
     ## @var x
-    # X-координата (float).
+    # The X-coordinate (float).
     #
     ## @var y
-    # Y-координата (float).
+    # The Y-coordinate (float).
     # @}
 
     def __init__(self, x, y):
@@ -242,10 +242,10 @@ class LineSegment:
     ## @name Public Attributes
     # @{
     ## @var p1
-    # Початкова точка відрізка (Point object).
+    # The starting point of the segment (Point object).
     #
     ## @var p2
-    # Кінцева точка відрізка (Point object).
+    # The ending point of the segment (Point object).
     # @}
 
     def __init__(self, p1: Point, p2: Point):
@@ -266,10 +266,10 @@ class Circle:
     ## @name Public Attributes
     # @{
     ## @var center
-    # Центр кола (Point object).
+    # The center of the circle (Point object).
     #
     ## @var radius
-    # Радіус кола (float).
+    # The radius of the circle (float).
     # @}
 
     def __init__(self, center: Point, radius: float):
@@ -313,7 +313,7 @@ class Polygon:
     ## @name Public Attributes
     # @{
     ## @var points
-    # Список вершин багатокутника (list[Point]).
+    # A list of the polygon's vertices (list[Point]).
     # @}
 
     def __init__(self, points):
