@@ -15,16 +15,23 @@ class TreeNode:
     @details Implements core tree operations including adding/removing children, Depth-First Search (DFS),
     Breadth-First Search (BFS), and value lookup.
     """
+    
+    ## @name Public Attributes
+    # @{
+    ## @var value
+    # Зберігає дані, що знаходяться у вузлі (будь-якого типу).
+    #
+    ## @var children
+    # Список дочірніх вузлів (list[TreeNode]), прикріплених до поточного вузла.
+    # @}
+
     def __init__(self, value):
         """!
         @brief Constructor for a general tree node.
         @param value The data value stored in the node.
         """
         self.value = value
-        """! Stored value of the node. """
-
         self.children = []
-        """! List of child nodes (list[TreeNode]). """
 
     def add_child(self, child_node):
         """!
@@ -44,7 +51,7 @@ class TreeNode:
         """!
         @brief Searches for a node with the given value in the subtree.
 
-        Performs a recursive search.
+        Performs a recursive search (DFS).
 
         @param value The value to search for.
         @return TreeNode | None Returns the found node or None if not found.
@@ -70,7 +77,7 @@ class TreeNode:
     def traverse_bfs(self):
         """!
         @brief Performs a Breadth-First Traversal (BFS) starting from this node.
-        @return list A list of node values in BFS order.
+        @return list A list of node values in BFS order (level-by-level).
         """
         result = []
         queue = [self]
@@ -85,21 +92,29 @@ class BinaryTreeNode:
     @brief Represents a node in a Binary Search Tree (BST).
     
     @details Each node has at most two children (left and right). Implements BST insertion,
-    searching, and the three standard traversal methods: Inorder, Preorder, and Postorder.
+    searching, and the three standard traversal methods.
     """
+
+    ## @name Public Attributes
+    # @{
+    ## @var value
+    # Значення, що зберігається у вузлі.
+    #
+    ## @var left
+    # Лівий дочірній вузол (BinaryTreeNode | None).
+    #
+    ## @var right
+    # Правий дочірній вузол (BinaryTreeNode | None).
+    # @}
+
     def __init__(self, value):
         """!
         @brief Constructor for a binary tree node.
         @param value The data value stored in the node.
         """
         self.value = value
-        """! The value stored in the node. """
-
         self.left = None
-        """! Left child node (BinaryTreeNode | None). """
-
         self.right = None
-        """! Right child node (BinaryTreeNode | None). """
 
     def insert_bst(self, value):
         """!
@@ -176,6 +191,16 @@ class Point:
     
     @details Provides methods for standard geometric transformations, returning a new Point object each time (immutable pattern).
     """
+
+    ## @name Public Attributes
+    # @{
+    ## @var x
+    # X-координата (float).
+    #
+    ## @var y
+    # Y-координата (float).
+    # @}
+
     def __init__(self, x, y):
         """!
         @brief Constructor for the Point.
@@ -183,10 +208,7 @@ class Point:
         @param y The Y-coordinate.
         """
         self.x = x
-        """! X-coordinate (float). """
-        
         self.y = y
-        """! Y-coordinate (float). """
 
     def move(self, dx, dy):
         """!
@@ -216,6 +238,16 @@ class LineSegment:
     """!
     @brief Represents a line segment defined by two Point objects.
     """
+
+    ## @name Public Attributes
+    # @{
+    ## @var p1
+    # Початкова точка відрізка (Point object).
+    #
+    ## @var p2
+    # Кінцева точка відрізка (Point object).
+    # @}
+
     def __init__(self, p1: Point, p2: Point):
         """!
         @brief Constructor for the LineSegment.
@@ -223,16 +255,23 @@ class LineSegment:
         @param p2 The second endpoint (Point object).
         """
         self.p1 = p1
-        """! Starting point of the segment. """
-
         self.p2 = p2
-        """! Ending point of the segment. """
 
 
 class Circle:
     """!
     @brief Represents a circle defined by a center Point and a radius.
     """
+
+    ## @name Public Attributes
+    # @{
+    ## @var center
+    # Центр кола (Point object).
+    #
+    ## @var radius
+    # Радіус кола (float).
+    # @}
+
     def __init__(self, center: Point, radius: float):
         """!
         @brief Constructor for the Circle.
@@ -240,10 +279,7 @@ class Circle:
         @param radius The radius of the circle.
         """
         self.center = center
-        """! Center point of the circle. """
-
         self.radius = radius
-        """! Radius of the circle. """
 
     def move(self, dx, dy):
         """!
@@ -273,13 +309,19 @@ class Polygon:
     """!
     @brief Represents a polygon defined by a list of Point objects (vertices).
     """
+
+    ## @name Public Attributes
+    # @{
+    ## @var points
+    # Список вершин багатокутника (list[Point]).
+    # @}
+
     def __init__(self, points):
         """!
         @brief Constructor for the Polygon.
         @param points A list of Point objects representing the vertices.
         """
         self.points = points
-        """! List of vertices (list[Point]). """
 
     def move(self, dx, dy):
         """!
@@ -301,7 +343,6 @@ class Polygon:
     def invert(self):
         """!
         @brief Inverts the polygon through the origin.
-
         @return Polygon A new Polygon instance with inverted vertices.
         """
         return Polygon([p.invert() for p in self.points])
