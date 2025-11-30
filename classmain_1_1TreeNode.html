@@ -91,48 +91,48 @@ $(document).ready(function(){initNavTree('classmain_1_1TreeNode.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classmain_1_1TreeNode-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">main.TreeNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a node in a general-purpose tree.  
+<p>Represents a node in a general N-ary tree (can have multiple children).  
  <a href="classmain_1_1TreeNode.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7cfdda367297c2a8b063afb2f003f17" id="r_ac7cfdda367297c2a8b063afb2f003f17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#ac7cfdda367297c2a8b063afb2f003f17">__init__</a> (self, <a class="el" href="classmain_1_1TreeNode.html#ae21b78d714b2a90ba97f9d701e5417f0">value</a>)</td></tr>
-<tr class="memdesc:ac7cfdda367297c2a8b063afb2f003f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a TreeNode.  <br /></td></tr>
+<tr class="memdesc:ac7cfdda367297c2a8b063afb2f003f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a general tree node.  <br /></td></tr>
 <tr class="separator:ac7cfdda367297c2a8b063afb2f003f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8176ae90fe7520d776328765288d376" id="r_ac8176ae90fe7520d776328765288d376"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#ac8176ae90fe7520d776328765288d376">add_child</a> (self, child_node)</td></tr>
-<tr class="memdesc:ac8176ae90fe7520d776328765288d376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child node.  <br /></td></tr>
+<tr class="memdesc:ac8176ae90fe7520d776328765288d376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a given TreeNode as a child to the current node.  <br /></td></tr>
 <tr class="separator:ac8176ae90fe7520d776328765288d376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a031432b536eba46c464b53dfd7f55d88" id="r_a031432b536eba46c464b53dfd7f55d88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#a031432b536eba46c464b53dfd7f55d88">remove_child_by_value</a> (self, <a class="el" href="classmain_1_1TreeNode.html#ae21b78d714b2a90ba97f9d701e5417f0">value</a>)</td></tr>
-<tr class="memdesc:a031432b536eba46c464b53dfd7f55d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a child node by its value.  <br /></td></tr>
+<tr class="memdesc:a031432b536eba46c464b53dfd7f55d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes any child nodes whose value matches the given value.  <br /></td></tr>
 <tr class="separator:a031432b536eba46c464b53dfd7f55d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e806548b0ccd6cb71506a2706a44d7" id="r_a08e806548b0ccd6cb71506a2706a44d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#a08e806548b0ccd6cb71506a2706a44d7">find</a> (self, <a class="el" href="classmain_1_1TreeNode.html#ae21b78d714b2a90ba97f9d701e5417f0">value</a>)</td></tr>
 <tr class="memdesc:a08e806548b0ccd6cb71506a2706a44d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a node with the given value in the subtree.  <br /></td></tr>
 <tr class="separator:a08e806548b0ccd6cb71506a2706a44d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d53460561e7f55a93daac3bf28801ac" id="r_a1d53460561e7f55a93daac3bf28801ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#a1d53460561e7f55a93daac3bf28801ac">traverse_dfs</a> (self)</td></tr>
-<tr class="memdesc:a1d53460561e7f55a93daac3bf28801ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs depth-first traversal of the tree.  <br /></td></tr>
+<tr class="memdesc:a1d53460561e7f55a93daac3bf28801ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a recursive Depth-First Traversal (pre-order) starting from this node.  <br /></td></tr>
 <tr class="separator:a1d53460561e7f55a93daac3bf28801ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3982eb26ca7579168520a80b7600f6a6" id="r_a3982eb26ca7579168520a80b7600f6a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#a3982eb26ca7579168520a80b7600f6a6">traverse_bfs</a> (self)</td></tr>
-<tr class="memdesc:a3982eb26ca7579168520a80b7600f6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs breadth-first traversal of the tree.  <br /></td></tr>
+<tr class="memdesc:a3982eb26ca7579168520a80b7600f6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a Breadth-First Traversal (BFS) starting from this node.  <br /></td></tr>
 <tr class="separator:a3982eb26ca7579168520a80b7600f6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Public Attributes</div></td></tr>
 <tr class="memitem:ae21b78d714b2a90ba97f9d701e5417f0" id="r_ae21b78d714b2a90ba97f9d701e5417f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#ae21b78d714b2a90ba97f9d701e5417f0">value</a></td></tr>
-<tr class="memdesc:ae21b78d714b2a90ba97f9d701e5417f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored value of the node.  <br /></td></tr>
+<tr class="memdesc:ae21b78d714b2a90ba97f9d701e5417f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зберігає дані, що знаходяться у вузлі (будь-якого типу).  <br /></td></tr>
 <tr class="separator:ae21b78d714b2a90ba97f9d701e5417f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd7e8acecacfe0b599dbfb23105cc1c" id="r_a9dd7e8acecacfe0b599dbfb23105cc1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1TreeNode.html#a9dd7e8acecacfe0b599dbfb23105cc1c">children</a></td></tr>
-<tr class="memdesc:a9dd7e8acecacfe0b599dbfb23105cc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of child nodes (list[TreeNode]).  <br /></td></tr>
+<tr class="memdesc:a9dd7e8acecacfe0b599dbfb23105cc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список дочірніх вузлів (list[TreeNode]), прикріплених до поточного вузла.  <br /></td></tr>
 <tr class="separator:a9dd7e8acecacfe0b599dbfb23105cc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a node in a general-purpose tree. </p>
-<p>This class allows for a variable number of children per node. </p>
+<div class="textblock"><p>Represents a node in a general N-ary tree (can have multiple children). </p>
+<p>Implements core tree operations including adding/removing children, Depth-First Search (DFS), Breadth-First Search (BFS), and value lookup. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac7cfdda367297c2a8b063afb2f003f17" name="ac7cfdda367297c2a8b063afb2f003f17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7cfdda367297c2a8b063afb2f003f17">&#9670;&#160;</a></span>__init__()</h2>
@@ -160,10 +160,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a TreeNode. </p>
+<p>Constructor for a general tree node. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The stored value inside the node. </td></tr>
+    <tr><td class="paramname">value</td><td>The data value stored in the node. </td></tr>
   </table>
   </dd>
 </dl>
@@ -197,10 +197,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a child node. </p>
+<p>Adds a given TreeNode as a child to the current node. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">child_node</td><td>The node to be added to the list of children. </td></tr>
+    <tr><td class="paramname">child_node</td><td>The TreeNode object to add. </td></tr>
   </table>
   </dd>
 </dl>
@@ -234,7 +234,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Searches for a node with the given value in the subtree. </p>
-<p>Performs a recursive search.</p>
+<p>Performs a recursive search (DFS).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>The value to search for. </td></tr>
@@ -271,11 +271,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes a child node by its value. </p>
-<p>Removes all children that match the specified value.</p>
+<p>Removes any child nodes whose value matches the given value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>Value of the child node(s) to remove. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the child node(s) to remove. </td></tr>
   </table>
   </dd>
 </dl>
@@ -298,8 +297,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs breadth-first traversal of the tree. </p>
-<dl class="section return"><dt>Returns</dt><dd>list A list of node values in BFS order. </dd></dl>
+<p>Performs a Breadth-First Traversal (BFS) starting from this node. </p>
+<dl class="section return"><dt>Returns</dt><dd>list A list of node values in BFS order (level-by-level). </dd></dl>
 
 </div>
 </div>
@@ -319,7 +318,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs depth-first traversal of the tree. </p>
+<p>Performs a recursive Depth-First Traversal (pre-order) starting from this node. </p>
 <dl class="section return"><dt>Returns</dt><dd>list A list of node values in DFS order. </dd></dl>
 
 </div>
@@ -337,7 +336,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>List of child nodes (list[TreeNode]). </p>
+<p>Список дочірніх вузлів (list[TreeNode]), прикріплених до поточного вузла. </p>
 
 </div>
 </div>
@@ -353,7 +352,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stored value of the node. </p>
+<p>Зберігає дані, що знаходяться у вузлі (будь-якого типу). </p>
 
 </div>
 </div>

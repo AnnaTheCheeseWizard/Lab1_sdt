@@ -91,25 +91,24 @@ $(document).ready(function(){initNavTree('classmain_1_1Polygon.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classmain_1_1Polygon-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">main.Polygon Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a polygon defined by a sequence of points.  
+<p>Represents a polygon defined by a list of Point objects (vertices).  
  <a href="classmain_1_1Polygon.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a14c7a5da7142926006a6c349457522f3" id="r_a14c7a5da7142926006a6c349457522f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1Polygon.html#a14c7a5da7142926006a6c349457522f3">__init__</a> (self, <a class="el" href="classmain_1_1Polygon.html#a482472559ac4dba73bc76ee136cfb67b">points</a>)</td></tr>
-<tr class="memdesc:a14c7a5da7142926006a6c349457522f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a polygon.  <br /></td></tr>
+<tr class="memdesc:a14c7a5da7142926006a6c349457522f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the Polygon.  <br /></td></tr>
 <tr class="separator:a14c7a5da7142926006a6c349457522f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e777de773bdd236d38cce57d560a71" id="r_a18e777de773bdd236d38cce57d560a71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1Polygon.html#a18e777de773bdd236d38cce57d560a71">move</a> (self, dx, dy)</td></tr>
-<tr class="memdesc:a18e777de773bdd236d38cce57d560a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the polygon by shifting all vertices.  <br /></td></tr>
+<tr class="memdesc:a18e777de773bdd236d38cce57d560a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the polygon by moving all its vertices.  <br /></td></tr>
 <tr class="separator:a18e777de773bdd236d38cce57d560a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d32328848e50dd73290daf06c599df" id="r_aa3d32328848e50dd73290daf06c599df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1Polygon.html#aa3d32328848e50dd73290daf06c599df">scale</a> (self, factor)</td></tr>
-<tr class="memdesc:aa3d32328848e50dd73290daf06c599df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the polygon by scaling all vertex coordinates.  <br /></td></tr>
+<tr class="memdesc:aa3d32328848e50dd73290daf06c599df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the polygon relative to the origin (0,0) by scaling all vertices.  <br /></td></tr>
 <tr class="separator:aa3d32328848e50dd73290daf06c599df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8095c15a92c9408a7ad689090434d1ab" id="r_a8095c15a92c9408a7ad689090434d1ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1Polygon.html#a8095c15a92c9408a7ad689090434d1ab">invert</a> (self)</td></tr>
 <tr class="memdesc:a8095c15a92c9408a7ad689090434d1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the polygon through the origin.  <br /></td></tr>
@@ -117,12 +116,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Public Attributes</div></td></tr>
 <tr class="memitem:a482472559ac4dba73bc76ee136cfb67b" id="r_a482472559ac4dba73bc76ee136cfb67b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1Polygon.html#a482472559ac4dba73bc76ee136cfb67b">points</a></td></tr>
-<tr class="memdesc:a482472559ac4dba73bc76ee136cfb67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of vertices (list[Point]).  <br /></td></tr>
+<tr class="memdesc:a482472559ac4dba73bc76ee136cfb67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список вершин багатокутника (list[Point]).  <br /></td></tr>
 <tr class="separator:a482472559ac4dba73bc76ee136cfb67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a polygon defined by a sequence of points. </p>
+<div class="textblock"><p>Represents a polygon defined by a list of Point objects (vertices). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a14c7a5da7142926006a6c349457522f3" name="a14c7a5da7142926006a6c349457522f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14c7a5da7142926006a6c349457522f3">&#9670;&#160;</a></span>__init__()</h2>
@@ -150,10 +150,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a polygon. </p>
+<p>Constructor for the Polygon. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>A list of Point objects representing vertices. </td></tr>
+    <tr><td class="paramname">points</td><td>A list of Point objects representing the vertices. </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,15 +214,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Moves the polygon by shifting all vertices. </p>
+<p>Translates the polygon by moving all its vertices. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dx</td><td>Shift along X-axis. </td></tr>
-    <tr><td class="paramname">dy</td><td>Shift along Y-axis. </td></tr>
+    <tr><td class="paramname">dx</td><td>The displacement along the X-axis. </td></tr>
+    <tr><td class="paramname">dy</td><td>The displacement along the Y-axis. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Polygon A new Polygon instance with moved vertices. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Polygon A new Polygon object after translation. </dd></dl>
 
 </div>
 </div>
@@ -252,14 +252,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Scales the polygon by scaling all vertex coordinates. </p>
+<p>Scales the polygon relative to the origin (0,0) by scaling all vertices. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factor</td><td>Scale multiplier. </td></tr>
+    <tr><td class="paramname">factor</td><td>The scaling factor. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Polygon A new Polygon instance with scaled vertices. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Polygon A new Polygon object after scaling. </dd></dl>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>List of vertices (list[Point]). </p>
+<p>Список вершин багатокутника (list[Point]). </p>
 
 </div>
 </div>

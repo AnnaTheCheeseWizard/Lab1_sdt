@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classtest__main_1_1TestGeometry.html',
 </div><!--header-->
 <div class="contents">
 
-<p>Unit tests for Point, LineSegment, Circle, and Polygon.  
+<p>Test suite for 2D geometric primitives.  
  <a href="classtest__main_1_1TestGeometry.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for test_main.TestGeometry:</div>
@@ -108,57 +108,60 @@ Inheritance diagram for test_main.TestGeometry:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1151e055880b08359dfa9d6ec3e8a569" id="r_a1151e055880b08359dfa9d6ec3e8a569"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a1151e055880b08359dfa9d6ec3e8a569">test_point_move_immutability</a> (self)</td></tr>
-<tr class="memdesc:a1151e055880b08359dfa9d6ec3e8a569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that move() returns a new Point without modifying the original.  <br /></td></tr>
+<tr class="memdesc:a1151e055880b08359dfa9d6ec3e8a569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the move operation for Point.  <br /></td></tr>
 <tr class="separator:a1151e055880b08359dfa9d6ec3e8a569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff632f7f5e5eada6b00017099975e64" id="r_a2ff632f7f5e5eada6b00017099975e64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a2ff632f7f5e5eada6b00017099975e64">test_point_scale_immutability</a> (self)</td></tr>
-<tr class="memdesc:a2ff632f7f5e5eada6b00017099975e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that scale() returns a new Point without modifying the original.  <br /></td></tr>
+<tr class="memdesc:a2ff632f7f5e5eada6b00017099975e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the scale operation for Point.  <br /></td></tr>
 <tr class="separator:a2ff632f7f5e5eada6b00017099975e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d177ff2c7eb5337c902c1309e30ed0" id="r_a80d177ff2c7eb5337c902c1309e30ed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a80d177ff2c7eb5337c902c1309e30ed0">test_point_invert_immutability</a> (self)</td></tr>
-<tr class="memdesc:a80d177ff2c7eb5337c902c1309e30ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that invert() returns a new Point without modifying the original.  <br /></td></tr>
+<tr class="memdesc:a80d177ff2c7eb5337c902c1309e30ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the invert operation for Point.  <br /></td></tr>
 <tr class="separator:a80d177ff2c7eb5337c902c1309e30ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e712149b677366af14e193eb54dff4" id="r_a26e712149b677366af14e193eb54dff4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a26e712149b677366af14e193eb54dff4">test_point_scale_zero</a> (self)</td></tr>
-<tr class="memdesc:a26e712149b677366af14e193eb54dff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that scaling by zero returns (0, 0).  <br /></td></tr>
+<tr class="memdesc:a26e712149b677366af14e193eb54dff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests scaling a point with zero factor.  <br /></td></tr>
 <tr class="separator:a26e712149b677366af14e193eb54dff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0f3f162ef7abb6195b99f261511e171" id="r_aa0f3f162ef7abb6195b99f261511e171"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#aa0f3f162ef7abb6195b99f261511e171">test_line_segment_creation</a> (self)</td></tr>
-<tr class="memdesc:aa0f3f162ef7abb6195b99f261511e171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests LineSegment initialization.  <br /></td></tr>
+<tr class="memdesc:aa0f3f162ef7abb6195b99f261511e171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests correct creation of a LineSegment.  <br /></td></tr>
 <tr class="separator:aa0f3f162ef7abb6195b99f261511e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4fb1cb0df77fbcf874edf9359d23f5" id="r_a3c4fb1cb0df77fbcf874edf9359d23f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a3c4fb1cb0df77fbcf874edf9359d23f5">test_circle_move_immutability</a> (self)</td></tr>
-<tr class="memdesc:a3c4fb1cb0df77fbcf874edf9359d23f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests move() returns new Circle without modifying the original.  <br /></td></tr>
+<tr class="memdesc:a3c4fb1cb0df77fbcf874edf9359d23f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the move operation for Circle.  <br /></td></tr>
 <tr class="separator:a3c4fb1cb0df77fbcf874edf9359d23f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9b4eaca2d4189c23bcd8339a16847e" id="r_a6c9b4eaca2d4189c23bcd8339a16847e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a6c9b4eaca2d4189c23bcd8339a16847e">test_circle_scale_immutability</a> (self)</td></tr>
-<tr class="memdesc:a6c9b4eaca2d4189c23bcd8339a16847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests scale() returns new Circle and scales radius + center.  <br /></td></tr>
+<tr class="memdesc:a6c9b4eaca2d4189c23bcd8339a16847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the scale operation for Circle.  <br /></td></tr>
 <tr class="separator:a6c9b4eaca2d4189c23bcd8339a16847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37824100b7293e4b50c652aae724e128" id="r_a37824100b7293e4b50c652aae724e128"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a37824100b7293e4b50c652aae724e128">test_circle_invert_immutability</a> (self)</td></tr>
-<tr class="memdesc:a37824100b7293e4b50c652aae724e128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests invert() returns new Circle without modifying the original.  <br /></td></tr>
+<tr class="memdesc:a37824100b7293e4b50c652aae724e128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the invert operation for Circle.  <br /></td></tr>
 <tr class="separator:a37824100b7293e4b50c652aae724e128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ea437d3dc7ad64619872f32e9af429" id="r_a56ea437d3dc7ad64619872f32e9af429"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a56ea437d3dc7ad64619872f32e9af429">test_circle_zero_radius</a> (self)</td></tr>
-<tr class="memdesc:a56ea437d3dc7ad64619872f32e9af429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that scaling a zero-radius circle keeps radius zero.  <br /></td></tr>
+<tr class="memdesc:a56ea437d3dc7ad64619872f32e9af429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests scaling a circle with zero radius.  <br /></td></tr>
 <tr class="separator:a56ea437d3dc7ad64619872f32e9af429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af141c8107ec2b734f08b889cd4ca32a4" id="r_af141c8107ec2b734f08b889cd4ca32a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#af141c8107ec2b734f08b889cd4ca32a4">test_circle_none_center</a> (self)</td></tr>
-<tr class="memdesc:af141c8107ec2b734f08b889cd4ca32a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that calling move() on a circle with None center raises an error.  <br /></td></tr>
+<tr class="memdesc:af141c8107ec2b734f08b889cd4ca32a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that AttributeError is raised when the circle center is None.  <br /></td></tr>
 <tr class="separator:af141c8107ec2b734f08b889cd4ca32a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86f4246d2879423e69c20ef83b04663" id="r_ac86f4246d2879423e69c20ef83b04663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#ac86f4246d2879423e69c20ef83b04663">test_polygon_move_immutability</a> (self)</td></tr>
-<tr class="memdesc:ac86f4246d2879423e69c20ef83b04663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that move() returns a new Polygon without modifying the original.  <br /></td></tr>
+<tr class="memdesc:ac86f4246d2879423e69c20ef83b04663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the move operation for Polygon.  <br /></td></tr>
 <tr class="separator:ac86f4246d2879423e69c20ef83b04663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919c7cc387ce757e7418cf780ad15adb" id="r_a919c7cc387ce757e7418cf780ad15adb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a919c7cc387ce757e7418cf780ad15adb">test_polygon_scale_immutability</a> (self)</td></tr>
-<tr class="memdesc:a919c7cc387ce757e7418cf780ad15adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that scale() creates a new Polygon with scaled points.  <br /></td></tr>
+<tr class="memdesc:a919c7cc387ce757e7418cf780ad15adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the scale operation for Polygon.  <br /></td></tr>
 <tr class="separator:a919c7cc387ce757e7418cf780ad15adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2961d0f7b7ef204b1f5346f60b0a1032" id="r_a2961d0f7b7ef204b1f5346f60b0a1032"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a2961d0f7b7ef204b1f5346f60b0a1032">test_polygon_invert_immutability</a> (self)</td></tr>
-<tr class="memdesc:a2961d0f7b7ef204b1f5346f60b0a1032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that invert() returns new Polygon with inverted points.  <br /></td></tr>
+<tr class="memdesc:a2961d0f7b7ef204b1f5346f60b0a1032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests immutability of the invert operation for Polygon.  <br /></td></tr>
 <tr class="separator:a2961d0f7b7ef204b1f5346f60b0a1032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f2ed57c4d3dd90ed6b41a5b24172db" id="r_af8f2ed57c4d3dd90ed6b41a5b24172db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#af8f2ed57c4d3dd90ed6b41a5b24172db">test_polygon_empty</a> (self)</td></tr>
-<tr class="memdesc:af8f2ed57c4d3dd90ed6b41a5b24172db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that operations on an empty polygon return empty results.  <br /></td></tr>
+<tr class="memdesc:af8f2ed57c4d3dd90ed6b41a5b24172db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests transformations on an empty Polygon.  <br /></td></tr>
 <tr class="separator:af8f2ed57c4d3dd90ed6b41a5b24172db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44fdb3495e5b962e43ca96bb5fb24895" id="r_a44fdb3495e5b962e43ca96bb5fb24895"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#a44fdb3495e5b962e43ca96bb5fb24895">test_polygon_negative_scale</a> (self)</td></tr>
-<tr class="memdesc:a44fdb3495e5b962e43ca96bb5fb24895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that negative scaling inverts coordinates as expected.  <br /></td></tr>
+<tr class="memdesc:a44fdb3495e5b962e43ca96bb5fb24895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests scaling a polygon with a negative factor.  <br /></td></tr>
 <tr class="separator:a44fdb3495e5b962e43ca96bb5fb24895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adca0a2445da9182c1946a2e6c2fd6d8f" id="r_adca0a2445da9182c1946a2e6c2fd6d8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__main_1_1TestGeometry.html#adca0a2445da9182c1946a2e6c2fd6d8f">test_polygon_invert_empty</a> (self)</td></tr>
-<tr class="memdesc:adca0a2445da9182c1946a2e6c2fd6d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests invert() on an empty polygon.  <br /></td></tr>
+<tr class="memdesc:adca0a2445da9182c1946a2e6c2fd6d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests invert operation on an empty Polygon.  <br /></td></tr>
 <tr class="separator:adca0a2445da9182c1946a2e6c2fd6d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Unit tests for Point, LineSegment, Circle, and Polygon. </p>
-<p>Focuses on verifying geometric calculations and immutability of the operations. </p>
+<div class="textblock"><p>Test suite for 2D geometric primitives. </p>
+<p>Verifies:</p><ul>
+<li>correctness of geometric transformations,</li>
+<li>immutability of original objects after transformations. </li>
+</ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a37824100b7293e4b50c652aae724e128" name="a37824100b7293e4b50c652aae724e128"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37824100b7293e4b50c652aae724e128">&#9670;&#160;</a></span>test_circle_invert_immutability()</h2>
@@ -176,8 +179,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests invert() returns new Circle without modifying the original. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000017">Test:</a></b></dt><dd>Verifies that inversion reflects the center across the origin but keeps the radius. </dd></dl>
+<p>Tests immutability of the invert operation for Circle. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000017">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -197,8 +200,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests move() returns new Circle without modifying the original. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000015">Test:</a></b></dt><dd>Verifies that moving a circle updates the center but keeps the original object intact. </dd></dl>
+<p>Tests immutability of the move operation for Circle. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000015">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -218,8 +221,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that calling move() on a circle with None center raises an error. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000019">Test:</a></b></dt><dd>Verifies error handling when Circle is initialized improperly for operations. </dd></dl>
+<p>Verifies that AttributeError is raised when the circle center is None. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000019">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -239,8 +242,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests scale() returns new Circle and scales radius + center. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000016">Test:</a></b></dt><dd>Verifies that scaling affects both the radius and the center's distance from origin. </dd></dl>
+<p>Tests immutability of the scale operation for Circle. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000016">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -260,8 +263,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that scaling a zero-radius circle keeps radius zero. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000018">Test:</a></b></dt><dd>Verifies edge case for zero radius. </dd></dl>
+<p>Tests scaling a circle with zero radius. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000018">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -281,8 +284,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests LineSegment initialization. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000014">Test:</a></b></dt><dd>Verifies that the LineSegment correctly stores start and end Points. </dd></dl>
+<p>Tests correct creation of a LineSegment. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000014">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -302,8 +305,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that invert() returns a new Point without modifying the original. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000012">Test:</a></b></dt><dd>Verifies coordinate inversion logic and object immutability. </dd></dl>
+<p>Tests immutability of the invert operation for Point. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000012">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -323,12 +326,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that move() returns a new Point without modifying the original. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000010">Test:</a></b></dt><dd>Verifies:<ul>
-<li>The new point has updated coordinates.</li>
-<li>The original point remains at (1, 2). </li>
-</ul>
-</dd></dl>
+<p>Tests immutability of the move operation for Point. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000010">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -348,12 +347,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that scale() returns a new Point without modifying the original. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000011">Test:</a></b></dt><dd>Verifies:<ul>
-<li>The new point has scaled coordinates.</li>
-<li>The original point remains unchanged. </li>
-</ul>
-</dd></dl>
+<p>Tests immutability of the scale operation for Point. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000011">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -373,8 +368,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that scaling by zero returns (0, 0). </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000013">Test:</a></b></dt><dd>Verifies edge case where scale factor is 0. </dd></dl>
+<p>Tests scaling a point with zero factor. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000013">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -394,8 +389,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that operations on an empty polygon return empty results. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000023">Test:</a></b></dt><dd>Verifies behavior when the Polygon has no points. </dd></dl>
+<p>Tests transformations on an empty Polygon. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000023">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -415,8 +410,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests invert() on an empty polygon. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000025">Test:</a></b></dt><dd>Verifies inversion logic on an empty list of points. </dd></dl>
+<p>Tests invert operation on an empty Polygon. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000025">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -436,8 +431,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that invert() returns new Polygon with inverted points. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000022">Test:</a></b></dt><dd>Verifies that all points are inverted across the origin. </dd></dl>
+<p>Tests immutability of the invert operation for Polygon. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000022">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -457,8 +452,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that move() returns a new Polygon without modifying the original. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000020">Test:</a></b></dt><dd>Verifies that all points in the polygon are shifted correctly. </dd></dl>
+<p>Tests immutability of the move operation for Polygon. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000020">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -478,8 +473,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that negative scaling inverts coordinates as expected. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000024">Test:</a></b></dt><dd>Verifies that a negative scale factor both scales and inverts the polygon. </dd></dl>
+<p>Tests scaling a polygon with a negative factor. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000024">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -499,8 +494,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tests that scale() creates a new Polygon with scaled points. </p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000021">Test:</a></b></dt><dd>Verifies that all points are scaled relative to the origin. </dd></dl>
+<p>Tests immutability of the scale operation for Polygon. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000021">Test:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
