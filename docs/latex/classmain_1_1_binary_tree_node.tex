@@ -1,0 +1,175 @@
+\doxysection{main.\+Binary\+Tree\+Node Class Reference}
+\hypertarget{classmain_1_1_binary_tree_node}{}\label{classmain_1_1_binary_tree_node}\index{main.BinaryTreeNode@{main.BinaryTreeNode}}
+
+
+Represents a node in a Binary Search Tree (BST).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_a818032acd114b6c122929553d6eee008}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmain_1_1_binary_tree_node_a758a8256de2aab3eed9f02d8a85131b8}{value}})
+\begin{DoxyCompactList}\small\item\em Constructor for a binary tree node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_a94feb260e000253e565c8cba733c9b3c}{insert\+\_\+bst}} (self, \mbox{\hyperlink{classmain_1_1_binary_tree_node_a758a8256de2aab3eed9f02d8a85131b8}{value}})
+\begin{DoxyCompactList}\small\item\em Inserts a new value into the BST following the binary search tree rules. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_a36bf25506b3e50ef80c029f77b8c6ac1}{search}} (self, \mbox{\hyperlink{classmain_1_1_binary_tree_node_a758a8256de2aab3eed9f02d8a85131b8}{value}})
+\begin{DoxyCompactList}\small\item\em Searches the BST for a node containing the specified value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_abeaeb2dae3456dbcce2ed66fdab394c6}{inorder}} (self)
+\begin{DoxyCompactList}\small\item\em Performs an Inorder traversal (Left, Root, Right). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_af5209d1ce52b2cf693632c3b066a3973}{preorder}} (self)
+\begin{DoxyCompactList}\small\item\em Performs a Preorder traversal (Root, Left, Right). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_a90d37cd14c991ee7ce5f5fd2e31409b9}{postorder}} (self)
+\begin{DoxyCompactList}\small\item\em Performs a Postorder traversal (Left, Right, Root). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{Indent}\textbf{ Public Attributes}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_a758a8256de2aab3eed9f02d8a85131b8}{value}} = value
+\begin{DoxyCompactList}\small\item\em Значення, що зберігається у вузлі. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_a743e74bf03886e48248116ed223f5340}{left}} = None
+\begin{DoxyCompactList}\small\item\em Лівий дочірній вузол (\doxylink{classmain_1_1_binary_tree_node}{Binary\+Tree\+Node} \texorpdfstring{$\vert$}{|} None). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_binary_tree_node_afab7632cd26ce98d2d959d7b19c79bf1}{right}} = None
+\begin{DoxyCompactList}\small\item\em Правий дочірній вузол (\doxylink{classmain_1_1_binary_tree_node}{Binary\+Tree\+Node} \texorpdfstring{$\vert$}{|} None). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a node in a Binary Search Tree (BST). 
+
+Each node has at most two children (left and right). Implements BST insertion, searching, and the three standard traversal methods. 
+
+\label{doc-constructors}
+\Hypertarget{classmain_1_1_binary_tree_node_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_1_1_binary_tree_node_a818032acd114b6c122929553d6eee008}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_a818032acd114b6c122929553d6eee008} 
+main.\+Binary\+Tree\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for a binary tree node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The data value stored in the node. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classmain_1_1_binary_tree_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_1_1_binary_tree_node_abeaeb2dae3456dbcce2ed66fdab394c6}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!inorder@{inorder}}
+\index{inorder@{inorder}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{inorder()}{inorder()}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_abeaeb2dae3456dbcce2ed66fdab394c6} 
+main.\+Binary\+Tree\+Node.\+inorder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Performs an Inorder traversal (Left, Root, Right). 
+
+\begin{DoxyReturn}{Returns}
+list A list of node values in ascending order (for a correct BST). 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_binary_tree_node_a94feb260e000253e565c8cba733c9b3c}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!insert\_bst@{insert\_bst}}
+\index{insert\_bst@{insert\_bst}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{insert\_bst()}{insert\_bst()}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_a94feb260e000253e565c8cba733c9b3c} 
+main.\+Binary\+Tree\+Node.\+insert\+\_\+bst (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Inserts a new value into the BST following the binary search tree rules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to insert. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_1_1_binary_tree_node_a90d37cd14c991ee7ce5f5fd2e31409b9}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!postorder@{postorder}}
+\index{postorder@{postorder}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{postorder()}{postorder()}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_a90d37cd14c991ee7ce5f5fd2e31409b9} 
+main.\+Binary\+Tree\+Node.\+postorder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Performs a Postorder traversal (Left, Right, Root). 
+
+\begin{DoxyReturn}{Returns}
+list A list of node values. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_binary_tree_node_af5209d1ce52b2cf693632c3b066a3973}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!preorder@{preorder}}
+\index{preorder@{preorder}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{preorder()}{preorder()}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_af5209d1ce52b2cf693632c3b066a3973} 
+main.\+Binary\+Tree\+Node.\+preorder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Performs a Preorder traversal (Root, Left, Right). 
+
+\begin{DoxyReturn}{Returns}
+list A list of node values. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_binary_tree_node_a36bf25506b3e50ef80c029f77b8c6ac1}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!search@{search}}
+\index{search@{search}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_a36bf25506b3e50ef80c029f77b8c6ac1} 
+main.\+Binary\+Tree\+Node.\+search (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Searches the BST for a node containing the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_binary_tree_node}{Binary\+Tree\+Node} or None The node containing the value, or None if not found. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmain_1_1_binary_tree_node_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain_1_1_binary_tree_node_a743e74bf03886e48248116ed223f5340}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!left@{left}}
+\index{left@{left}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_a743e74bf03886e48248116ed223f5340} 
+main.\+Binary\+Tree\+Node.\+left = None}
+
+
+
+Лівий дочірній вузол (\doxylink{classmain_1_1_binary_tree_node}{Binary\+Tree\+Node} \texorpdfstring{$\vert$}{|} None). 
+
+\Hypertarget{classmain_1_1_binary_tree_node_afab7632cd26ce98d2d959d7b19c79bf1}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!right@{right}}
+\index{right@{right}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_afab7632cd26ce98d2d959d7b19c79bf1} 
+main.\+Binary\+Tree\+Node.\+right = None}
+
+
+
+Правий дочірній вузол (\doxylink{classmain_1_1_binary_tree_node}{Binary\+Tree\+Node} \texorpdfstring{$\vert$}{|} None). 
+
+\Hypertarget{classmain_1_1_binary_tree_node_a758a8256de2aab3eed9f02d8a85131b8}\index{main.BinaryTreeNode@{main.BinaryTreeNode}!value@{value}}
+\index{value@{value}!main.BinaryTreeNode@{main.BinaryTreeNode}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{classmain_1_1_binary_tree_node_a758a8256de2aab3eed9f02d8a85131b8} 
+main.\+Binary\+Tree\+Node.\+value = value}
+
+
+
+Значення, що зберігається у вузлі. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}

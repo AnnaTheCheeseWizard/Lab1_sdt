@@ -1,0 +1,124 @@
+\doxysection{main.\+Polygon Class Reference}
+\hypertarget{classmain_1_1_polygon}{}\label{classmain_1_1_polygon}\index{main.Polygon@{main.Polygon}}
+
+
+Represents a polygon defined by a list of \doxylink{classmain_1_1_point}{Point} objects (vertices).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_polygon_a14c7a5da7142926006a6c349457522f3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmain_1_1_polygon_a482472559ac4dba73bc76ee136cfb67b}{points}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classmain_1_1_polygon}{Polygon}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_polygon_a18e777de773bdd236d38cce57d560a71}{move}} (self, dx, dy)
+\begin{DoxyCompactList}\small\item\em Translates the polygon by moving all its vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_polygon_aa3d32328848e50dd73290daf06c599df}{scale}} (self, factor)
+\begin{DoxyCompactList}\small\item\em Scales the polygon relative to the origin (0,0) by scaling all vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_polygon_a8095c15a92c9408a7ad689090434d1ab}{invert}} (self)
+\begin{DoxyCompactList}\small\item\em Inverts the polygon through the origin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{Indent}\textbf{ Public Attributes}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_polygon_a482472559ac4dba73bc76ee136cfb67b}{points}} = points
+\begin{DoxyCompactList}\small\item\em Список вершин багатокутника (list\mbox{[}\doxylink{classmain_1_1_point}{Point}\mbox{]}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a polygon defined by a list of \doxylink{classmain_1_1_point}{Point} objects (vertices). 
+
+\label{doc-constructors}
+\Hypertarget{classmain_1_1_polygon_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_1_1_polygon_a14c7a5da7142926006a6c349457522f3}\index{main.Polygon@{main.Polygon}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.Polygon@{main.Polygon}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmain_1_1_polygon_a14c7a5da7142926006a6c349457522f3} 
+main.\+Polygon.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classmain_1_1_polygon}{Polygon}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & A list of \doxylink{classmain_1_1_point}{Point} objects representing the vertices. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classmain_1_1_polygon_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_1_1_polygon_a8095c15a92c9408a7ad689090434d1ab}\index{main.Polygon@{main.Polygon}!invert@{invert}}
+\index{invert@{invert}!main.Polygon@{main.Polygon}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily \label{classmain_1_1_polygon_a8095c15a92c9408a7ad689090434d1ab} 
+main.\+Polygon.\+invert (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Inverts the polygon through the origin. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_polygon}{Polygon} A new \doxylink{classmain_1_1_polygon}{Polygon} instance with inverted vertices. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_polygon_a18e777de773bdd236d38cce57d560a71}\index{main.Polygon@{main.Polygon}!move@{move}}
+\index{move@{move}!main.Polygon@{main.Polygon}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{classmain_1_1_polygon_a18e777de773bdd236d38cce57d560a71} 
+main.\+Polygon.\+move (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dx}{, }\item[{}]{dy}{}\end{DoxyParamCaption})}
+
+
+
+Translates the polygon by moving all its vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The displacement along the X-\/axis. \\
+\hline
+{\em dy} & The displacement along the Y-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_polygon}{Polygon} A new \doxylink{classmain_1_1_polygon}{Polygon} object after translation. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_polygon_aa3d32328848e50dd73290daf06c599df}\index{main.Polygon@{main.Polygon}!scale@{scale}}
+\index{scale@{scale}!main.Polygon@{main.Polygon}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{classmain_1_1_polygon_aa3d32328848e50dd73290daf06c599df} 
+main.\+Polygon.\+scale (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{factor}{}\end{DoxyParamCaption})}
+
+
+
+Scales the polygon relative to the origin (0,0) by scaling all vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The scaling factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_polygon}{Polygon} A new \doxylink{classmain_1_1_polygon}{Polygon} object after scaling. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmain_1_1_polygon_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain_1_1_polygon_a482472559ac4dba73bc76ee136cfb67b}\index{main.Polygon@{main.Polygon}!points@{points}}
+\index{points@{points}!main.Polygon@{main.Polygon}}
+\doxysubsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily \label{classmain_1_1_polygon_a482472559ac4dba73bc76ee136cfb67b} 
+main.\+Polygon.\+points = points}
+
+
+
+Список вершин багатокутника (list\mbox{[}\doxylink{classmain_1_1_point}{Point}\mbox{]}). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}

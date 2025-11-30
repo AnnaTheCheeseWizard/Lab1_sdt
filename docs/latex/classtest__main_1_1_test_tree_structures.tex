@@ -1,0 +1,187 @@
+\doxysection{test\+\_\+main.\+Test\+Tree\+Structures Class Reference}
+\hypertarget{classtest__main_1_1_test_tree_structures}{}\label{classtest__main_1_1_test_tree_structures}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+
+
+Test suite for tree data structures.  
+
+
+Inheritance diagram for test\+\_\+main.\+Test\+Tree\+Structures\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__main_1_1_test_tree_structures}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_a2dc8143862a194ea322e6236ef64765c}{test\+\_\+add\+\_\+and\+\_\+find\+\_\+child}} (self)
+\begin{DoxyCompactList}\small\item\em Tests adding a child node and searching it by value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_a15ccee78d49ff6263b6496bea61547fa}{test\+\_\+remove\+\_\+child\+\_\+by\+\_\+value}} (self)
+\begin{DoxyCompactList}\small\item\em Tests removal of a child node by its value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_a8273b59ff6f500d1e43e1adbe4e95fa6}{test\+\_\+dfs\+\_\+traversal\+\_\+order}} (self)
+\begin{DoxyCompactList}\small\item\em Verifies correct Depth-\/\+First Search (DFS) traversal order. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_a6b5a5cbf9dd74ac8575ec79e1800f5dd}{test\+\_\+bfs\+\_\+traversal\+\_\+order}} (self)
+\begin{DoxyCompactList}\small\item\em Verifies correct Breadth-\/\+First Search (BFS) traversal order. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_a8734ab34d92fd5e30af1fdbe0f11b36e}{test\+\_\+binary\+\_\+tree\+\_\+insertion\+\_\+and\+\_\+search}} (self)
+\begin{DoxyCompactList}\small\item\em Tests insertion into a Binary Search Tree and searching for values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_ae95271b3642f7c0d324812f2583327f6}{test\+\_\+binary\+\_\+tree\+\_\+search\+\_\+not\+\_\+found}} (self)
+\begin{DoxyCompactList}\small\item\em Tests searching for a value not present in the BST. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_ae6f5ceb174b0e527eeb5e1fcd7b0246f}{test\+\_\+binary\+\_\+tree\+\_\+inorder\+\_\+traversal}} (self)
+\begin{DoxyCompactList}\small\item\em Tests correct Inorder traversal (Left–\+Node–\+Right). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_aecc07aee227b73b1a6a48b93094934a0}{test\+\_\+binary\+\_\+tree\+\_\+preorder\+\_\+traversal}} (self)
+\begin{DoxyCompactList}\small\item\em Tests correct Preorder traversal (Node–\+Left–\+Right). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtest__main_1_1_test_tree_structures_a1b0f2a805735f4e5fc8775c6ec294ff9}{test\+\_\+binary\+\_\+tree\+\_\+postorder\+\_\+traversal}} (self)
+\begin{DoxyCompactList}\small\item\em Tests correct Postorder traversal (Left–\+Right–\+Node). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test suite for tree data structures. 
+
+Verifies correctness of\+:
+\begin{DoxyItemize}
+\item node insertion and deletion,
+\item value searching,
+\item DFS and BFS traversal (\doxylink{classmain_1_1_tree_node}{Tree\+Node}),
+\item Inorder, Preorder and Postorder traversals (\doxylink{classmain_1_1_binary_tree_node}{Binary\+Tree\+Node}). 
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\Hypertarget{classtest__main_1_1_test_tree_structures_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtest__main_1_1_test_tree_structures_a2dc8143862a194ea322e6236ef64765c}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_add\_and\_find\_child@{test\_add\_and\_find\_child}}
+\index{test\_add\_and\_find\_child@{test\_add\_and\_find\_child}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_add\_and\_find\_child()}{test\_add\_and\_find\_child()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_a2dc8143862a194ea322e6236ef64765c} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+add\+\_\+and\+\_\+find\+\_\+child (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests adding a child node and searching it by value. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]\end{DoxyRefDesc}
+
+
+Ensures that\+:
+\begin{DoxyItemize}
+\item the child is successfully added,
+\item the search method correctly finds existing elements,
+\item and returns None for missing values. 
+\end{DoxyItemize}\Hypertarget{classtest__main_1_1_test_tree_structures_a6b5a5cbf9dd74ac8575ec79e1800f5dd}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_bfs\_traversal\_order@{test\_bfs\_traversal\_order}}
+\index{test\_bfs\_traversal\_order@{test\_bfs\_traversal\_order}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_bfs\_traversal\_order()}{test\_bfs\_traversal\_order()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_a6b5a5cbf9dd74ac8575ec79e1800f5dd} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+bfs\+\_\+traversal\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Verifies correct Breadth-\/\+First Search (BFS) traversal order. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]\end{DoxyRefDesc}
+
+
+Confirms level-\/by-\/level traversal correctness. \Hypertarget{classtest__main_1_1_test_tree_structures_ae6f5ceb174b0e527eeb5e1fcd7b0246f}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_binary\_tree\_inorder\_traversal@{test\_binary\_tree\_inorder\_traversal}}
+\index{test\_binary\_tree\_inorder\_traversal@{test\_binary\_tree\_inorder\_traversal}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_binary\_tree\_inorder\_traversal()}{test\_binary\_tree\_inorder\_traversal()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_ae6f5ceb174b0e527eeb5e1fcd7b0246f} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+binary\+\_\+tree\+\_\+inorder\+\_\+traversal (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests correct Inorder traversal (Left–\+Node–\+Right). 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000007}{Test}}]\end{DoxyRefDesc}
+
+
+Confirms that nodes are returned in sorted ascending order. \Hypertarget{classtest__main_1_1_test_tree_structures_a8734ab34d92fd5e30af1fdbe0f11b36e}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_binary\_tree\_insertion\_and\_search@{test\_binary\_tree\_insertion\_and\_search}}
+\index{test\_binary\_tree\_insertion\_and\_search@{test\_binary\_tree\_insertion\_and\_search}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_binary\_tree\_insertion\_and\_search()}{test\_binary\_tree\_insertion\_and\_search()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_a8734ab34d92fd5e30af1fdbe0f11b36e} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+binary\+\_\+tree\+\_\+insertion\+\_\+and\+\_\+search (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests insertion into a Binary Search Tree and searching for values. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000005}{Test}}]\end{DoxyRefDesc}
+
+
+Confirms that BST properties are preserved after insertion. \Hypertarget{classtest__main_1_1_test_tree_structures_a1b0f2a805735f4e5fc8775c6ec294ff9}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_binary\_tree\_postorder\_traversal@{test\_binary\_tree\_postorder\_traversal}}
+\index{test\_binary\_tree\_postorder\_traversal@{test\_binary\_tree\_postorder\_traversal}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_binary\_tree\_postorder\_traversal()}{test\_binary\_tree\_postorder\_traversal()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_a1b0f2a805735f4e5fc8775c6ec294ff9} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+binary\+\_\+tree\+\_\+postorder\+\_\+traversal (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests correct Postorder traversal (Left–\+Right–\+Node). 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000009}{Test}}]\end{DoxyRefDesc}
+\Hypertarget{classtest__main_1_1_test_tree_structures_aecc07aee227b73b1a6a48b93094934a0}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_binary\_tree\_preorder\_traversal@{test\_binary\_tree\_preorder\_traversal}}
+\index{test\_binary\_tree\_preorder\_traversal@{test\_binary\_tree\_preorder\_traversal}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_binary\_tree\_preorder\_traversal()}{test\_binary\_tree\_preorder\_traversal()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_aecc07aee227b73b1a6a48b93094934a0} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+binary\+\_\+tree\+\_\+preorder\+\_\+traversal (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests correct Preorder traversal (Node–\+Left–\+Right). 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000008}{Test}}]\end{DoxyRefDesc}
+\Hypertarget{classtest__main_1_1_test_tree_structures_ae95271b3642f7c0d324812f2583327f6}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_binary\_tree\_search\_not\_found@{test\_binary\_tree\_search\_not\_found}}
+\index{test\_binary\_tree\_search\_not\_found@{test\_binary\_tree\_search\_not\_found}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_binary\_tree\_search\_not\_found()}{test\_binary\_tree\_search\_not\_found()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_ae95271b3642f7c0d324812f2583327f6} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+binary\+\_\+tree\+\_\+search\+\_\+not\+\_\+found (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests searching for a value not present in the BST. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000006}{Test}}]\end{DoxyRefDesc}
+
+
+Ensures that missing elements return None. \Hypertarget{classtest__main_1_1_test_tree_structures_a8273b59ff6f500d1e43e1adbe4e95fa6}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_dfs\_traversal\_order@{test\_dfs\_traversal\_order}}
+\index{test\_dfs\_traversal\_order@{test\_dfs\_traversal\_order}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_dfs\_traversal\_order()}{test\_dfs\_traversal\_order()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_a8273b59ff6f500d1e43e1adbe4e95fa6} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+dfs\+\_\+traversal\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Verifies correct Depth-\/\+First Search (DFS) traversal order. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]\end{DoxyRefDesc}
+
+
+Confirms pre-\/order traversal correctness\+: Root → Left subtree → Right subtree. \Hypertarget{classtest__main_1_1_test_tree_structures_a15ccee78d49ff6263b6496bea61547fa}\index{test\_main.TestTreeStructures@{test\_main.TestTreeStructures}!test\_remove\_child\_by\_value@{test\_remove\_child\_by\_value}}
+\index{test\_remove\_child\_by\_value@{test\_remove\_child\_by\_value}!test\_main.TestTreeStructures@{test\_main.TestTreeStructures}}
+\doxysubsubsection{\texorpdfstring{test\_remove\_child\_by\_value()}{test\_remove\_child\_by\_value()}}
+{\footnotesize\ttfamily \label{classtest__main_1_1_test_tree_structures_a15ccee78d49ff6263b6496bea61547fa} 
+test\+\_\+main.\+Test\+Tree\+Structures.\+test\+\_\+remove\+\_\+child\+\_\+by\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Tests removal of a child node by its value. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]\end{DoxyRefDesc}
+
+
+Ensures that\+:
+\begin{DoxyItemize}
+\item the selected child is removed,
+\item other children remain intact,
+\item the tree structure remains consistent. 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/\mbox{\hyperlink{test__main_8py}{test\+\_\+main.\+py}}\end{DoxyCompactItemize}

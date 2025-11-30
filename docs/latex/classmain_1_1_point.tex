@@ -1,0 +1,140 @@
+\doxysection{main.\+Point Class Reference}
+\hypertarget{classmain_1_1_point}{}\label{classmain_1_1_point}\index{main.Point@{main.Point}}
+
+
+Represents a 2D geometric point (x, y).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_point_af24ff662dd8cd86ca23fb1516b4d0d88}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmain_1_1_point_aedb472840a8ef1626cf00f3a807dfa78}{x}}, \mbox{\hyperlink{classmain_1_1_point_a2c5c34c3f9ac6ad82de75fe879dc618f}{y}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classmain_1_1_point}{Point}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_point_a1a574752a20f054e3502fe12cccb6d48}{move}} (self, dx, dy)
+\begin{DoxyCompactList}\small\item\em Translates the point by given offsets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_point_ac55ae55c313e1de4c945827d8b032efc}{scale}} (self, factor)
+\begin{DoxyCompactList}\small\item\em Scales the point relative to the origin (0,0). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_point_a95d25d57d22aa285cb2674adc4f95252}{invert}} (self)
+\begin{DoxyCompactList}\small\item\em Inverts the point\textquotesingle{}s coordinates (reflection across the origin). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{Indent}\textbf{ Public Attributes}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_point_aedb472840a8ef1626cf00f3a807dfa78}{x}} = x
+\begin{DoxyCompactList}\small\item\em X-\/координата (float). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_point_a2c5c34c3f9ac6ad82de75fe879dc618f}{y}} = y
+\begin{DoxyCompactList}\small\item\em Y-\/координата (float). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a 2D geometric point (x, y). 
+
+Provides methods for standard geometric transformations, returning a new \doxylink{classmain_1_1_point}{Point} object each time (immutable pattern). 
+
+\label{doc-constructors}
+\Hypertarget{classmain_1_1_point_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_1_1_point_af24ff662dd8cd86ca23fb1516b4d0d88}\index{main.Point@{main.Point}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.Point@{main.Point}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmain_1_1_point_af24ff662dd8cd86ca23fb1516b4d0d88} 
+main.\+Point.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classmain_1_1_point}{Point}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate. \\
+\hline
+{\em y} & The Y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classmain_1_1_point_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_1_1_point_a95d25d57d22aa285cb2674adc4f95252}\index{main.Point@{main.Point}!invert@{invert}}
+\index{invert@{invert}!main.Point@{main.Point}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily \label{classmain_1_1_point_a95d25d57d22aa285cb2674adc4f95252} 
+main.\+Point.\+invert (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Inverts the point\textquotesingle{}s coordinates (reflection across the origin). 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_point}{Point} A new \doxylink{classmain_1_1_point}{Point} object with inverted coordinates (-\/x, -\/y). 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_point_a1a574752a20f054e3502fe12cccb6d48}\index{main.Point@{main.Point}!move@{move}}
+\index{move@{move}!main.Point@{main.Point}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{classmain_1_1_point_a1a574752a20f054e3502fe12cccb6d48} 
+main.\+Point.\+move (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dx}{, }\item[{}]{dy}{}\end{DoxyParamCaption})}
+
+
+
+Translates the point by given offsets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The displacement along the X-\/axis. \\
+\hline
+{\em dy} & The displacement along the Y-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_point}{Point} A new \doxylink{classmain_1_1_point}{Point} object after the translation. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_point_ac55ae55c313e1de4c945827d8b032efc}\index{main.Point@{main.Point}!scale@{scale}}
+\index{scale@{scale}!main.Point@{main.Point}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{classmain_1_1_point_ac55ae55c313e1de4c945827d8b032efc} 
+main.\+Point.\+scale (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{factor}{}\end{DoxyParamCaption})}
+
+
+
+Scales the point relative to the origin (0,0). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The scaling factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_point}{Point} A new \doxylink{classmain_1_1_point}{Point} object after scaling. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmain_1_1_point_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain_1_1_point_aedb472840a8ef1626cf00f3a807dfa78}\index{main.Point@{main.Point}!x@{x}}
+\index{x@{x}!main.Point@{main.Point}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{classmain_1_1_point_aedb472840a8ef1626cf00f3a807dfa78} 
+main.\+Point.\+x = x}
+
+
+
+X-\/координата (float). 
+
+\Hypertarget{classmain_1_1_point_a2c5c34c3f9ac6ad82de75fe879dc618f}\index{main.Point@{main.Point}!y@{y}}
+\index{y@{y}!main.Point@{main.Point}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{classmain_1_1_point_a2c5c34c3f9ac6ad82de75fe879dc618f} 
+main.\+Point.\+y = y}
+
+
+
+Y-\/координата (float). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}
