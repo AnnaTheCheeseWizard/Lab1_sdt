@@ -1,5 +1,5 @@
 """!
-@file structures_geometry.py
+@file main.py
 @brief Library for fundamental data structures (General Tree, BST) and 2D geometric shapes.
 
 @details This module provides basic implementations for tree nodes (general N-ary and binary search tree)
@@ -21,7 +21,10 @@ class TreeNode:
         @param value The data value stored in the node.
         """
         self.value = value
+        """! Stored value of the node. """
+
         self.children = []
+        """! List of child nodes (list[TreeNode]). """
 
     def add_child(self, child_node):
         """!
@@ -39,10 +42,12 @@ class TreeNode:
 
     def find(self, value):
         """!
-        @brief Searches the subtree rooted at this node for a specific value using DFS.
+        @brief Searches for a node with the given value in the subtree.
+
+        Performs a recursive search.
+
         @param value The value to search for.
-        @return TreeNode or None The node containing the value, or None if not found.
-        @details Uses a recursive Depth-First Search approach.
+        @return TreeNode | None Returns the found node or None if not found.
         """
         if self.value == value:
             return self
@@ -88,8 +93,13 @@ class BinaryTreeNode:
         @param value The data value stored in the node.
         """
         self.value = value
+        """! The value stored in the node. """
+
         self.left = None
+        """! Left child node (BinaryTreeNode | None). """
+
         self.right = None
+        """! Right child node (BinaryTreeNode | None). """
 
     def insert_bst(self, value):
         """!
@@ -173,7 +183,10 @@ class Point:
         @param y The Y-coordinate.
         """
         self.x = x
+        """! X-coordinate (float). """
+        
         self.y = y
+        """! Y-coordinate (float). """
 
     def move(self, dx, dy):
         """!
@@ -210,7 +223,11 @@ class LineSegment:
         @param p2 The second endpoint (Point object).
         """
         self.p1 = p1
+        """! Starting point of the segment. """
+
         self.p2 = p2
+        """! Ending point of the segment. """
+
 
 class Circle:
     """!
@@ -223,7 +240,10 @@ class Circle:
         @param radius The radius of the circle.
         """
         self.center = center
+        """! Center point of the circle. """
+
         self.radius = radius
+        """! Radius of the circle. """
 
     def move(self, dx, dy):
         """!
@@ -259,6 +279,7 @@ class Polygon:
         @param points A list of Point objects representing the vertices.
         """
         self.points = points
+        """! List of vertices (list[Point]). """
 
     def move(self, dx, dy):
         """!
@@ -279,7 +300,8 @@ class Polygon:
 
     def invert(self):
         """!
-        @brief Inverts the polygon by inverting all its vertices.
-        @return Polygon A new Polygon object with inverted vertices.
+        @brief Inverts the polygon through the origin.
+
+        @return Polygon A new Polygon instance with inverted vertices.
         """
         return Polygon([p.invert() for p in self.points])
