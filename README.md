@@ -10,6 +10,6 @@ The code is modular, testable, and suitable for educational, algorithmic, or gra
 ## 📚 Documentation
 
 Automatically generated documentation for this project is available at the following link:
-[GitHub Pages Documentation](https://AnnaTheCheeseWisatd.github.io/Lab1_sdt/)
+[GitHub Pages Documentation](https://annathecheesewizard.github.io/Lab1_sdt/)
 
 The documentation is generated after each code update using GitHub Actions and Doxygen.
