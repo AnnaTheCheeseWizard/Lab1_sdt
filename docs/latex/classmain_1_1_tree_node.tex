@@ -1,0 +1,167 @@
+\doxysection{main.\+Tree\+Node Class Reference}
+\hypertarget{classmain_1_1_tree_node}{}\label{classmain_1_1_tree_node}\index{main.TreeNode@{main.TreeNode}}
+
+
+Represents a node in a general N-\/ary tree (can have multiple children).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_ac7cfdda367297c2a8b063afb2f003f17}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmain_1_1_tree_node_ae21b78d714b2a90ba97f9d701e5417f0}{value}})
+\begin{DoxyCompactList}\small\item\em Constructor for a general tree node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_ac8176ae90fe7520d776328765288d376}{add\+\_\+child}} (self, child\+\_\+node)
+\begin{DoxyCompactList}\small\item\em Adds a given \doxylink{classmain_1_1_tree_node}{Tree\+Node} as a child to the current node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_a031432b536eba46c464b53dfd7f55d88}{remove\+\_\+child\+\_\+by\+\_\+value}} (self, \mbox{\hyperlink{classmain_1_1_tree_node_ae21b78d714b2a90ba97f9d701e5417f0}{value}})
+\begin{DoxyCompactList}\small\item\em Removes any child nodes whose value matches the given value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_a08e806548b0ccd6cb71506a2706a44d7}{find}} (self, \mbox{\hyperlink{classmain_1_1_tree_node_ae21b78d714b2a90ba97f9d701e5417f0}{value}})
+\begin{DoxyCompactList}\small\item\em Searches for a node with the given value in the subtree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_a1d53460561e7f55a93daac3bf28801ac}{traverse\+\_\+dfs}} (self)
+\begin{DoxyCompactList}\small\item\em Performs a recursive Depth-\/\+First Traversal (pre-\/order) starting from this node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_a3982eb26ca7579168520a80b7600f6a6}{traverse\+\_\+bfs}} (self)
+\begin{DoxyCompactList}\small\item\em Performs a Breadth-\/\+First Traversal (BFS) starting from this node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{Indent}\textbf{ Public Attributes}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_tree_node_ae21b78d714b2a90ba97f9d701e5417f0}{value}} = value
+\begin{DoxyCompactList}\small\item\em Зберігає дані, що знаходяться у вузлі (будь-\/якого типу). \end{DoxyCompactList}\item 
+list \mbox{\hyperlink{classmain_1_1_tree_node_a90896f670282a9f54334393ed8d3f3ce}{children}} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Список дочірніх вузлів (list\mbox{[}\doxylink{classmain_1_1_tree_node}{Tree\+Node}\mbox{]}), прикріплених до поточного вузла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a node in a general N-\/ary tree (can have multiple children). 
+
+Implements core tree operations including adding/removing children, Depth-\/\+First Search (DFS), Breadth-\/\+First Search (BFS), and value lookup. 
+
+\label{doc-constructors}
+\Hypertarget{classmain_1_1_tree_node_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_1_1_tree_node_ac7cfdda367297c2a8b063afb2f003f17}\index{main.TreeNode@{main.TreeNode}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_ac7cfdda367297c2a8b063afb2f003f17} 
+main.\+Tree\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for a general tree node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The data value stored in the node. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classmain_1_1_tree_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_1_1_tree_node_ac8176ae90fe7520d776328765288d376}\index{main.TreeNode@{main.TreeNode}!add\_child@{add\_child}}
+\index{add\_child@{add\_child}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{add\_child()}{add\_child()}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_ac8176ae90fe7520d776328765288d376} 
+main.\+Tree\+Node.\+add\+\_\+child (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{child\+\_\+node}{}\end{DoxyParamCaption})}
+
+
+
+Adds a given \doxylink{classmain_1_1_tree_node}{Tree\+Node} as a child to the current node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+\_\+node} & The \doxylink{classmain_1_1_tree_node}{Tree\+Node} object to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_1_1_tree_node_a08e806548b0ccd6cb71506a2706a44d7}\index{main.TreeNode@{main.TreeNode}!find@{find}}
+\index{find@{find}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_a08e806548b0ccd6cb71506a2706a44d7} 
+main.\+Tree\+Node.\+find (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Searches for a node with the given value in the subtree. 
+
+Performs a recursive search (DFS).
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_tree_node}{Tree\+Node} \texorpdfstring{$\vert$}{|} None Returns the found node or None if not found. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_tree_node_a031432b536eba46c464b53dfd7f55d88}\index{main.TreeNode@{main.TreeNode}!remove\_child\_by\_value@{remove\_child\_by\_value}}
+\index{remove\_child\_by\_value@{remove\_child\_by\_value}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{remove\_child\_by\_value()}{remove\_child\_by\_value()}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_a031432b536eba46c464b53dfd7f55d88} 
+main.\+Tree\+Node.\+remove\+\_\+child\+\_\+by\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Removes any child nodes whose value matches the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value of the child node(s) to remove. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_1_1_tree_node_a3982eb26ca7579168520a80b7600f6a6}\index{main.TreeNode@{main.TreeNode}!traverse\_bfs@{traverse\_bfs}}
+\index{traverse\_bfs@{traverse\_bfs}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{traverse\_bfs()}{traverse\_bfs()}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_a3982eb26ca7579168520a80b7600f6a6} 
+main.\+Tree\+Node.\+traverse\+\_\+bfs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Performs a Breadth-\/\+First Traversal (BFS) starting from this node. 
+
+\begin{DoxyReturn}{Returns}
+list A list of node values in BFS order (level-\/by-\/level). 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_tree_node_a1d53460561e7f55a93daac3bf28801ac}\index{main.TreeNode@{main.TreeNode}!traverse\_dfs@{traverse\_dfs}}
+\index{traverse\_dfs@{traverse\_dfs}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{traverse\_dfs()}{traverse\_dfs()}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_a1d53460561e7f55a93daac3bf28801ac} 
+main.\+Tree\+Node.\+traverse\+\_\+dfs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Performs a recursive Depth-\/\+First Traversal (pre-\/order) starting from this node. 
+
+\begin{DoxyReturn}{Returns}
+list A list of node values in DFS order. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmain_1_1_tree_node_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain_1_1_tree_node_a90896f670282a9f54334393ed8d3f3ce}\index{main.TreeNode@{main.TreeNode}!children@{children}}
+\index{children@{children}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{children}{children}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_a90896f670282a9f54334393ed8d3f3ce} 
+list main.\+Tree\+Node.\+children = \mbox{[}$\,$\mbox{]}}
+
+
+
+Список дочірніх вузлів (list\mbox{[}\doxylink{classmain_1_1_tree_node}{Tree\+Node}\mbox{]}), прикріплених до поточного вузла. 
+
+\Hypertarget{classmain_1_1_tree_node_ae21b78d714b2a90ba97f9d701e5417f0}\index{main.TreeNode@{main.TreeNode}!value@{value}}
+\index{value@{value}!main.TreeNode@{main.TreeNode}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{classmain_1_1_tree_node_ae21b78d714b2a90ba97f9d701e5417f0} 
+main.\+Tree\+Node.\+value = value}
+
+
+
+Зберігає дані, що знаходяться у вузлі (будь-\/якого типу). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}

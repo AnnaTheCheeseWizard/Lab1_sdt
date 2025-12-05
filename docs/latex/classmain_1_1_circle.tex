@@ -1,0 +1,138 @@
+\doxysection{main.\+Circle Class Reference}
+\hypertarget{classmain_1_1_circle}{}\label{classmain_1_1_circle}\index{main.Circle@{main.Circle}}
+
+
+Represents a circle defined by a center \doxylink{classmain_1_1_point}{Point} and a radius.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_circle_ac9dc29ccc4211673105796b93c4c7daa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmain_1_1_point}{Point}} \mbox{\hyperlink{classmain_1_1_circle_add827fc790dcc36c10cc95aa4eaac44a}{center}}, float \mbox{\hyperlink{classmain_1_1_circle_a93fda4a3283b6ce73bb74ddd3ffa2dfd}{radius}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classmain_1_1_circle}{Circle}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_circle_af6b8685440029ae9015843170c2640d6}{move}} (self, dx, dy)
+\begin{DoxyCompactList}\small\item\em Moves the circle by translating its center. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_circle_a5639495e1b8e8c11fac8ec5b5734ea30}{scale}} (self, factor)
+\begin{DoxyCompactList}\small\item\em Scales the circle (scales both the center and the radius). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_circle_af8c9c018c3112dff3597e288aa4adedc}{invert}} (self)
+\begin{DoxyCompactList}\small\item\em Inverts the circle by inverting its center. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{Indent}\textbf{ Public Attributes}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_circle_add827fc790dcc36c10cc95aa4eaac44a}{center}} = center
+\begin{DoxyCompactList}\small\item\em Центр кола (\doxylink{classmain_1_1_point}{Point} object). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_circle_a93fda4a3283b6ce73bb74ddd3ffa2dfd}{radius}} = radius
+\begin{DoxyCompactList}\small\item\em Радіус кола (float). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a circle defined by a center \doxylink{classmain_1_1_point}{Point} and a radius. 
+
+\label{doc-constructors}
+\Hypertarget{classmain_1_1_circle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_1_1_circle_ac9dc29ccc4211673105796b93c4c7daa}\index{main.Circle@{main.Circle}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.Circle@{main.Circle}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmain_1_1_circle_ac9dc29ccc4211673105796b93c4c7daa} 
+main.\+Circle.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classmain_1_1_point}{Point}}}]{center}{, }\item[{float}]{radius}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classmain_1_1_circle}{Circle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & The center of the circle (\doxylink{classmain_1_1_point}{Point} object). \\
+\hline
+{\em radius} & The radius of the circle. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classmain_1_1_circle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_1_1_circle_af8c9c018c3112dff3597e288aa4adedc}\index{main.Circle@{main.Circle}!invert@{invert}}
+\index{invert@{invert}!main.Circle@{main.Circle}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily \label{classmain_1_1_circle_af8c9c018c3112dff3597e288aa4adedc} 
+main.\+Circle.\+invert (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Inverts the circle by inverting its center. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_circle}{Circle} A new \doxylink{classmain_1_1_circle}{Circle} object. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_circle_af6b8685440029ae9015843170c2640d6}\index{main.Circle@{main.Circle}!move@{move}}
+\index{move@{move}!main.Circle@{main.Circle}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{classmain_1_1_circle_af6b8685440029ae9015843170c2640d6} 
+main.\+Circle.\+move (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dx}{, }\item[{}]{dy}{}\end{DoxyParamCaption})}
+
+
+
+Moves the circle by translating its center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The displacement along the X-\/axis. \\
+\hline
+{\em dy} & The displacement along the Y-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_circle}{Circle} A new \doxylink{classmain_1_1_circle}{Circle} object. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_circle_a5639495e1b8e8c11fac8ec5b5734ea30}\index{main.Circle@{main.Circle}!scale@{scale}}
+\index{scale@{scale}!main.Circle@{main.Circle}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{classmain_1_1_circle_a5639495e1b8e8c11fac8ec5b5734ea30} 
+main.\+Circle.\+scale (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{factor}{}\end{DoxyParamCaption})}
+
+
+
+Scales the circle (scales both the center and the radius). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The scaling factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classmain_1_1_circle}{Circle} A new \doxylink{classmain_1_1_circle}{Circle} object. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmain_1_1_circle_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain_1_1_circle_add827fc790dcc36c10cc95aa4eaac44a}\index{main.Circle@{main.Circle}!center@{center}}
+\index{center@{center}!main.Circle@{main.Circle}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \label{classmain_1_1_circle_add827fc790dcc36c10cc95aa4eaac44a} 
+main.\+Circle.\+center = center}
+
+
+
+Центр кола (\doxylink{classmain_1_1_point}{Point} object). 
+
+\Hypertarget{classmain_1_1_circle_a93fda4a3283b6ce73bb74ddd3ffa2dfd}\index{main.Circle@{main.Circle}!radius@{radius}}
+\index{radius@{radius}!main.Circle@{main.Circle}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily \label{classmain_1_1_circle_a93fda4a3283b6ce73bb74ddd3ffa2dfd} 
+main.\+Circle.\+radius = radius}
+
+
+
+Радіус кола (float). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}
